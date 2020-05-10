@@ -1,0 +1,30 @@
+{
+  "name": "fill-css",
+  "version": "0.1.0",
+  "description": "A collection of CSS helpers for screen-filling layouts, based on Flexbox.",
+  "author": {
+    "name": "Andrea Marongiu",
+    "email": "andrea.marongiu.off@gmail.com",
+    "url": "https://wwww.maronzu.com"
+  },
+  "main": "fill.scss",
+  "unpkg": "css/fill.css",
+  "style": "css/bulma.min.css",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/fill.css css/fill.css",
+    "build-cleancss": "cleancss -o css/fill.min.css css/fill.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true fill.scss css/fill.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  }
+}
