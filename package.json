@@ -1,6 +1,6 @@
 {
   "name": "fill-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A collection of CSS helpers for screen-filling layouts, based on Flexbox.",
   "author": {
     "name": "Andrea Marongiu",
@@ -9,7 +9,7 @@
   },
   "main": "fill.scss",
   "unpkg": "css/fill.css",
-  "style": "css/bulma.min.css",
+  "style": "css/fill.min.css",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
