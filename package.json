@@ -1,6 +1,6 @@
 {
   "name": "fill-css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A collection of CSS helpers for screen-filling layouts, based on Flexbox.",
   "author": {
     "name": "Andrea Marongiu",
