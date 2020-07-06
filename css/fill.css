@@ -54,10 +54,10 @@
 }
 
 .fillScrollY {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .fillScrollX {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 /*# sourceMappingURL=fill.css.map */
